@@ -30,32 +30,6 @@ def main():
                            plot_title='showing',
                            list_file_data=['chorus_1.wav', 'chorus_2.wav'])
 
-    # 00:00:59 -> 00:01:14 | 00:02:44 -> 00:02:59
-
-    # visualize_compare_plot(plot_position=111,
-    #                        plot_title='Original clean',
-    #                        list_file_data=['new_record.wav', 'record.wav'])
-
-    # visualize_compare_plot(plot_position=222,
-    #                        plot_title='original record',
-    #                        list_file_data=['new_record.wav'])
-    #
-    # visualize_compare_plot(plot_position=224,
-    #                        plot_title='record 29',
-    #                        list_file_data=['record_29.wav'])
-
-    # visualize_compare_plot(plot_position=222,
-    #                        plot_title='SOX clean 0db',
-    #                        list_file_data=['dataset/noise/sp10_car_sn0.wav', 'dataset/clean/sp10_sn0_clean.wav'])
-
-    # visualize_compare_plot(plot_position=223,
-    #                        plot_title='SOX clean 10db',
-    #                        list_file_data=['dataset/noise/sp10_car_sn10.wav', 'dataset/clean/sp10_sn10_clean.wav'])
-    #
-    # visualize_compare_plot(plot_position=224,
-    #                        plot_title='SOX clean 15db',
-    #                        list_file_data=['dataset/noise/sp10_car_sn15.wav', 'dataset/clean/sp10_sn15_clean.wav'])
-
     plt.show()
 
 
