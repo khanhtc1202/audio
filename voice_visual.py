@@ -28,7 +28,7 @@ def visualize_compare_plot(plot_position, plot_title, list_file_data):
 def main():
     visualize_compare_plot(plot_position=111,
                            plot_title='showing',
-                           list_file_data=['chorus_1.wav', 'chorus_2.wav'])
+                           list_file_data=['public/voices/for_visual/chorus_1.wav', 'public/voices/for_visual/chorus_2.wav'])
 
     plt.show()
 
