@@ -1,7 +1,4 @@
 .idea/
 dataset/
-bin/
-lib/
-include/
-.Python
-pip-selfcheck.json
+.venv/
+*.pyc
