@@ -1,8 +1,8 @@
 from pydub import AudioSegment
+import sys
 
-base_path = "./public/voices"
-default_export_path = base_path+"/mix/combined.mp3"
-default_noise_path = base_path + "/noise/radio-noise.wav"
+default_noise_path = sys.argv[1]
+default_export_path = sys.argv[2]
 
 def read_sound_from_source(path):
     return AudioSegment.from_file(path)
@@ -27,7 +27,7 @@ def make_noise(sound, save_to=default_export_path):
 
 
 def main():
-    sound1 = read_sound_from_source(base_path + "/mix/whams.mp3")
+    sound1 = read_sound_from_source(default_export_path)
     make_noise(sound=sound1)
 
 
