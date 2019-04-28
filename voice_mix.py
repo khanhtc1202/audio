@@ -1,8 +1,9 @@
 from pydub import AudioSegment
 import sys
 
-default_noise_path = sys.argv[1]
-default_export_path = sys.argv[2]
+source_sound_path = sys.argv[1]
+default_noise_path = sys.argv[2]
+default_export_path = sys.argv[3]
 
 def read_sound_from_source(path):
     return AudioSegment.from_file(path)
@@ -27,7 +28,7 @@ def make_noise(sound, save_to=default_export_path):
 
 
 def main():
-    sound1 = read_sound_from_source(default_export_path)
+    sound1 = read_sound_from_source(source_sound_path)
     make_noise(sound=sound1)
 
 
