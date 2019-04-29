@@ -4,8 +4,9 @@ import sys
 source_audio = sys.argv[1]
 export_audio = sys.argv[2]
 
-print source_audio
-print export_audio
+def main():
+    sound = AudioSegment.from_mp3(source_audio)
+    sound.export(export_audio, format="wav")
 
-sound = AudioSegment.from_mp3(source_audio)
-sound.export(export_audio, format="wav")
+if __name__ == '__main__':
+    main()
